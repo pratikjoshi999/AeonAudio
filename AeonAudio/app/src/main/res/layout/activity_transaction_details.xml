@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/primary_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+
+
+                >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/bg_circle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction"
+                android:textSize="20dp"
+                android:textColor="@color/pageTitleColor"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:id="@+id/transactionTitleTextView"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/transactionAmountLayout"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/transactionAmountTitletextView"
+                    android:textSize="14dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="fhhfhfh"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/alreadyMemberTextColor"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/transactionStatustextView"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:textColor="@color/alreadyMemberTextColor"
+                    android:text="dgggggggg"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/transactionDateLayout"
+            android:layout_margin="5dp"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transactionDateTitleTextView"
+                android:text="Transaction Date :"
+                android:textSize="14dp"
+                android:textColor="@color/alreadyMemberTextColor"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/transactionDateTextView"
+                android:ellipsize="end"
+                android:textColor="@color/alreadyMemberTextColor"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="14dp"/>
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/transactionOrderLayout"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transactionOrderTitletextView"
+                android:text="Order:"
+                android:textSize="14dp"
+                android:textColor="@color/alreadyMemberTextColor"
+
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transactionOrdertextView"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/alreadyMemberTextColor"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/transactionInvoiceLayout"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transactionInvoiceTitletextView"
+                android:text="Invoice :"
+                android:textSize="14dp"
+                android:textColor="@color/alreadyMemberTextColor"
+
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/transactionInvoicetextView"
+                android:layout_weight="1"
+                android:textColor="@color/alreadyMemberTextColor"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/transactionPLanNameLayout"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transactionPlanNameTitleTextView"
+                android:text="Plan Name :"
+                android:textSize="14dp"
+                android:textColor="@color/alreadyMemberTextColor"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transactionPlanNameTextView"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/alreadyMemberTextColor"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/lineTextView"
+            android:textSize="14dp"
+            android:background="@color/border_color"
+            android:textColor="@color/alreadyMemberTextColor"
+            android:layout_marginTop="10dp"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/transactionDateLayout"
+            android:layout_margin="5dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/transactionDateTextView"
+                android:ellipsize="end"
+                android:textColor="@color/alreadyMemberTextColor"
+                android:maxLines="1"
+                android:text="sffffffffff"
+                android:textSize="14dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/activeTextView"
+                    android:ellipsize="end"
+                    android:textColor="@color/alreadyMemberTextColor"
+                    android:maxLines="1"
+                    android:text="Active"
+                    android:gravity="right"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:id="@+id/activeIconTextView"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/bg_circle"/>
+                    <!--android:backgroundTint="@color/green"-->
+                    <!--android:textColor="@color/green"-->
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:id="@+id/transactionDownloadButton"
+            android:text="DOWNLOAD"
+            android:background="@drawable/button_radious"
+            android:textColor="@color/buttonTextColor"
+            android:textAllCaps="false"
+            android:layout_margin="15dp"
+            android:stateListAnimator="@null"
+            android:paddingLeft="20dp"
+            android:textSize="17dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackgroundColor"
+        android:visibility="gone"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tryAgainButton"
+            android:gravity="center"
+            android:maxLines="4"
+            android:id="@+id/no_internet_text"
+            android:singleLine="false"
+            android:text="No Internet Connection / No Data"
+            android:textColor="@color/noInternetColor"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tryAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/button_background"
+            android:padding="8dp"
+            android:text="Try again !"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

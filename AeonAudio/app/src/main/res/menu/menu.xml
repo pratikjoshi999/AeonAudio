@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <!--<item-->
+    <!--android:id="@+id/nav_notification"-->
+    <!--android:icon="@drawable/notification_ic"-->
+    <!--android:title="Settings"-->
+    <!--app:showAsAction="ifRoom"                />-->
+
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="101"
+        android:title="gyugygytgyt"
+        android:visible="false"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_Search"
+        android:icon="@drawable/search_icon"
+        android:orderInCategory="102"
+        android:title=""
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/filter"
+        android:orderInCategory="103"
+        android:title=""
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/payment_history"
+        android:orderInCategory="104"
+        android:visible="false"
+        android:title="Purchase History" />
+
+    <item
+        android:id="@+id/PlayList"
+        android:orderInCategory="105"
+        android:visible="false"
+        android:title="My PlayList" />
+
+    <item
+        android:id="@+id/favourites"
+        android:orderInCategory="106"
+        android:visible="false"
+        android:title="My Favourites" />
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="@string/media_route_menu_title"
+        app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"
+        android:orderInCategory="107"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/myDownload"
+        android:orderInCategory="108"
+        android:visible="false"
+        android:title="My Download" />
+
+
+
+
+</menu>

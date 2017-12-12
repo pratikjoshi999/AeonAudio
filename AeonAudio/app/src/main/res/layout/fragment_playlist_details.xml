@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.release.aeonaudio.activity.PlaylistDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/top_vg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/image_card"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/play_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            tools:text="Lovely Sweet Devine"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/listdata_item_text_size" />
+
+        <TextView
+            android:id="@+id/playlist_song_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="21 Tracks"
+            android:paddingBottom="10dp"
+            android:alpha="0.5"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+        <View
+            android:id="@+id/low_row"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/top_vg"
+            android:background="#20ffffff"
+            />
+        <Button
+            android:id="@+id/play_all"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@string/regular_fonts"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:visibility="gone"
+            android:paddingLeft="2dp"
+            android:background="@drawable/shape"
+            android:text="Play All"
+            android:textColor="#fff" />
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="none"
+            android:layout_below="@+id/top_vg"
+            android:layout_marginTop="10dp"
+            android:id="@+id/playlistDetails_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

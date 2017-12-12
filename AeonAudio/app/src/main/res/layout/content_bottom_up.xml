@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:clickable="true"
+    app:behavior_peekHeight="60dp"
+    android:clipToPadding="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+
+    <include
+        layout="@layout/minicontroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <include
+        layout="@layout/activity_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+ <!--   <include  layout="@layout/queue_viewer"
+        />-->
+
+
+</android.support.design.widget.CoordinatorLayout>
+

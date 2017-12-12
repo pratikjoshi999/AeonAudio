@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackgroundColor"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/demoListView"
+            android:gravity = "center"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="40dp"
+
+            />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:background="@drawable/view_more_button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:text="Reset"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/applyButton"
+            android:stateListAnimator="@null"
+            android:background="@drawable/view_more_button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:layout_toRightOf="@+id/resetButton"
+            android:layout_marginLeft="50dp"
+            android:text="Apply"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

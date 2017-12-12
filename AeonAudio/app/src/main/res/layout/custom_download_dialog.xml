@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_newplaylist"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="CREATE YOUR PLAYLIST  "
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f3f3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/userfield_vg"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/blur">
+        <TextView
+            android:layout_toRightOf="@+id/imagedownload"
+
+            android:layout_centerVertical="true"
+            android:id="@+id/editTextDialogUserInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter PlayList Name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/hint_color"/>
+        <ImageView
+            android:id="@+id/imagedownload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/download_svg" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="Download"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:foreground="?selectableItemBackground"
+            android:background="@drawable/background_playlist_button_shape"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/saveButton"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/cancelButton"
+            android:foreground="?selectableItemBackground"
+            android:background="@drawable/background_playlist_button_shape"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

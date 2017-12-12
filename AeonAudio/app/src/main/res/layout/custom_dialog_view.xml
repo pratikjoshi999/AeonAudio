@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_newplaylist"
+    android:orientation="vertical"
+     >
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c7c6c6"/>-->
+    <!--android:textColor="#6b6a6a"-->
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_playlist_content"
+        android:textColor="#fffefe"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f3f3"/>
+    <TextView
+        android:id="@+id/new_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_background"
+        android:text="@string/new_playlist"
+        android:paddingLeft="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9fcf9f9"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ece6e6"
+        android:text="@string/your_playlists"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#60f1eeee"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c7c6c6"/>
+
+    <ListView
+        android:id="@+id/playList_content_listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        />
+ <!--<ProgressBar
+     android:id="@+id/List_wait_progressBar"
+     android:layout_width="50dp"
+     android:layout_height="50dp"
+     />-->
+
+
+</LinearLayout>

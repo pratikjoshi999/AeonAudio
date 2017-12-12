@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="">
+    <group
+        android:id="@+id/dynamic_nav_items"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Pop" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="HipHop" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Electronics" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_Lists"-->
+            <!--android:icon="@drawable/list"-->
+            <!--android:title="Lists" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_Profiles"-->
+            <!--android:icon="@drawable/person"-->
+            <!--android:title="Profiles" />-->
+
+    </group>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single"
+                android:id="@+id/static_nav_items">
+
+                <item
+                    android:id="@+id/nav_share1"
+                    android:icon="@drawable/settings"
+                    android:title="Settings" />
+                <item
+                    android:id="@+id/nav_send1"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Log out" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

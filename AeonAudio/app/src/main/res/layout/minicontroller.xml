@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:playpauseview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/miniControl"
+    android:elevation="4dp"
+    android:orientation="vertical"
+
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <!--<SeekBar-->
+        <!--android:thumb="@null"-->
+        <!--android:progressTint="@color/button_background"-->
+        <!--android:id="@+id/miniController_seekbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#06000000"-->
+        <!--android:paddingLeft="0dp"-->
+        <!--android:paddingRight="0dp"-->
+        <!--android:layout_height="2dp"-->
+        <!--/>-->
+
+    <SeekBar
+        android:id="@+id/miniController_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@style/seekbar"
+        android:thumb="@null"
+        android:max="100"
+        />
+
+    <RelativeLayout
+        android:id="@+id/slidepanelchildtwo_topviewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toLeftOf="@+id/rel_bottombar_moreicon"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/button_background">
+
+                <ImageView
+                    android:id="@+id/miniControl_play"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/play_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/song_p_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/song_p_Genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_below="@id/song_p_name"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#605555"
+                    tools:text="by-Tyler Swift" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_bottombar_moreicon"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:id="@+id/open_bottomSheet"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:src="@drawable/up_arrow" />
+            <ImageView
+                android:id="@+id/equalizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                 />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

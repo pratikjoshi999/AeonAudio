@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item
+        android:id="@+id/MyFavorites"
+        android:icon="@drawable/ic_favorite_black_24px"
+        android:orderInCategory="100"
+        android:title="My Favorites"
+        app:showAsAction="withText"
+
+        />
+
+    <item
+        android:id="@+id/MyPlaylist"
+        android:icon="@drawable/playlist_row"
+        android:orderInCategory="101"
+        android:title="My Playlists"
+        app:showAsAction="withText"
+        />
+
+
+    <item
+        android:id="@+id/saveAsPlaylist"
+        android:orderInCategory="104"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/saveasplaylist"
+
+        android:visible="false"
+        android:title="Save as Playlist" />
+
+    <item
+        android:id="@+id/ClearQueueButton"
+        android:orderInCategory="102"
+        android:icon="@drawable/clearq"
+
+        app:showAsAction="always|withText"
+
+        android:title="Clear Queue" />
+</menu>

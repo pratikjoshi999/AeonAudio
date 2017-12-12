@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize_signup" >16sp</dimen>
+    <dimen name="textsize_terms">18sp</dimen>
+
+    <dimen name="viewpager_height">450dp</dimen>
+    <dimen name="listdata_items_image_playlist">60dp</dimen>
+    //collapsing Recyclerview
+    <dimen name="recycler_marginTop">530dp</dimen>
+    <dimen name="CollapsingImageMinHeight">350dp</dimen>
+    //CollapsingImageLayout
+    <dimen name="PivotX">300dp</dimen>
+    <dimen name="PivotY">100dp</dimen>
+    <dimen name="circle_measure">400dp</dimen>
+    <dimen name="viewall_padding">6dp</dimen>
+
+
+</resources>

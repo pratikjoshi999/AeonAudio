@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_peekHeight="500dp"
+    android:id="@+id/myQueue"
+    android:background="@drawable/shape_queue_list"
+    android:clickable="true"
+    android:clipToPadding="true"
+      >
+        <RelativeLayout
+            android:id="@+id/Queue_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="true"
+            android:background="@drawable/shape_queue_list"
+           >
+            <ImageView
+                android:id="@+id/open_bottomSheet"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/up_arrow" />
+
+            <TextView
+                android:id="@+id/queue_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/open_bottomSheet"
+                android:layout_toStartOf="@+id/open_bottomSheet"
+                android:text="Queue"
+                android:paddingRight="8dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/large_text"
+                />
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
